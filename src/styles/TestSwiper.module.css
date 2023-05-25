@@ -22,3 +22,7 @@
 .swiper-wrapper {
   transition-timing-function: cubic-bezier(0.55, 0.05, 0.22, 0.99);
 }
+
+.slider__wrapper {
+  position: relative;
+}

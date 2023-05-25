@@ -63,7 +63,7 @@ const TestCarousel = () => {
   };
 
   return (
-    <div>
+    <div className="slider__wrapper">
       <Swiper
         onSlideChange={handleSlideChange}
         slidesPerView={3}
