@@ -98,12 +98,12 @@ const TestCarousel = () => {
           );
         })}
       </Swiper>
-      <div ref={prevButtonRef} id="button_prev" className="">
-        前
-      </div>
-      <div id="button_next" className="">
-        次
-      </div>
+      <div
+        ref={prevButtonRef}
+        id="button_prev"
+        className="swiper-button-prev"
+      ></div>
+      <div id="button_next" className="swiper-button-next"></div>
     </div>
   );
 };
