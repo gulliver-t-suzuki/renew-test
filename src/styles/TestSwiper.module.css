@@ -1,6 +1,8 @@
 .swiper {
   width: 100%;
   height: 100%;
+  overflow: visible;
+  max-width: 1200px;
 }
 
 .swiper-slide {
@@ -19,10 +21,16 @@
   object-fit: cover;
 }
 
-.swiper-wrapper {
-  transition-timing-function: cubic-bezier(0.55, 0.05, 0.22, 0.99);
+.mySwiper {
+  max-width: 1500px;
+  margin: auto;
+  margin-right: 0;
+  padding-left: 5%;
+  padding-right: 10%;
+  overflow: visible;
 }
 
-.slider__wrapper {
+.slider_wrapper {
   position: relative;
+  overflow: hidden;
 }

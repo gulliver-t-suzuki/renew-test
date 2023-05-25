@@ -7,7 +7,7 @@ import { useEffect, useRef } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "../../styles/TestSwiper.module.css";
+import styles from "../../styles/TestSwiper.module.css";
 
 // カルーセルにする画像のソースをリストにします
 const images = [
@@ -57,17 +57,17 @@ const TestCarousel = () => {
     }
 
     swiper.update();
-    console.log(prevButton);
+    console.log(swiper.realIndex);
 
     console.log("巻き戻し許可：" + swiper.params.rewind);
   };
 
   return (
-    <div className="slider__wrapper">
+    <div className={styles.slider_wrapper}>
       <Swiper
         onSlideChange={handleSlideChange}
         slidesPerView={3}
-        spaceBetween={30}
+        spaceBetween={24}
         speed={600}
         navigation={{
           // パラメータを設定
@@ -75,7 +75,7 @@ const TestCarousel = () => {
           nextEl: "#button_next",
         }}
         modules={[Navigation]}
-        className="mySwiper"
+        className={styles.mySwiper}
       >
         {images.map((src: string, index: number) => {
           return (
