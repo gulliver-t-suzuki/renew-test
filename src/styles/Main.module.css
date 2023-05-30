@@ -5,11 +5,23 @@
 
 .isAbsolute {
   position: absolute;
-  bottom: 0;
+  top: 0;
 }
 
 .cat {
   background-image: url(../../public/images/01_top/main-cat.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.h1,
+#bottomContents {
+  font-size: 80px;
+}
+
+@media screen and (max-width: 480px) {
+  .h1,
+  #bottomContents {
+    font-size: 40px;
+  }
 }
