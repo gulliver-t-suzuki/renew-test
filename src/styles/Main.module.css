@@ -1,0 +1,15 @@
+.isFixed {
+  position: fixed;
+  bottom: 80px;
+}
+
+.isAbsolute {
+  position: absolute;
+  bottom: 0;
+}
+
+.cat {
+  background-image: url(../../public/images/01_top/main-cat.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

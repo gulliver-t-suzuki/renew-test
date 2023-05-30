@@ -3,7 +3,7 @@ import styles from "@/styles/Home.module.css";
 import Head from "next/head";
 import Header from "../components/elements/Header";
 import Footer from "@/components/elements/Footer";
-import Slider from "../components/layouts/Splide";
+import Main from "../components/layouts/Main";
 import TestCarousel from "../components/layouts/Swiper";
 
 export default function Home() {
@@ -18,8 +18,7 @@ export default function Home() {
 
       <Header />
       <main className={styles.main}>
-        <h1>せいやっ</h1>
-        <Slider />
+        <Main />
         <TestCarousel />
       </main>
       <Footer />
