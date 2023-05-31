@@ -1,6 +1,6 @@
 .isFixed {
   position: fixed;
-  bottom: 80px;
+  bottom: 12%;
 }
 
 .isAbsolute {
@@ -15,13 +15,14 @@
 }
 
 .h1,
-#bottomContents {
-  font-size: 80px;
+.bottomContents {
+  font-size: 64px;
+  line-height: 120px;
 }
 
 @media screen and (max-width: 480px) {
   .h1,
-  #bottomContents {
+  .bottomContents {
     font-size: 40px;
   }
 }

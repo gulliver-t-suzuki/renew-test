@@ -1,10 +1,13 @@
 import Image from "next/image";
-import styles from "@/styles/Home.module.css";
+//import styles from "@/styles/Home.module.css";
 import Head from "next/head";
 import Header from "../components/elements/Header";
 import Footer from "@/components/elements/Footer";
 import Main from "../components/layouts/Main";
+import RightImage from "../components/layouts/RightImage";
+import LeftImage from "../components/layouts/LeftImage";
 import TestCarousel from "../components/layouts/Swiper";
+import styles from "../styles/Main.module.css";
 
 export default function Home() {
   return (
@@ -18,7 +21,48 @@ export default function Home() {
 
       <Header />
       <main className={styles.main}>
-        <Main />
+        <div
+          style={{ width: "100%", height: "100vh" }}
+          className={styles.cat}
+        ></div>
+
+        <RightImage
+          text={
+            <div>
+              <Main />
+              <p
+                style={{
+                  margin: "3rem 0",
+                  lineHeight: "2rem",
+                  fontSize: "16px",
+                }}
+              >
+                吾輩は猫である。名前はまだ無い。
+                <br />
+                どこで生れたかとんと見当がつかぬ。
+                <br />
+                何でも薄暗いじめじめした所でニャーニャー
+                <br />
+                泣いていた事だけは記憶している。
+              </p>
+            </div>
+          }
+          url="/images/01_top/main-cat2.jpg"
+          style="under_bg"
+        />
+        <LeftImage
+          text=<p>
+            吾輩は猫である。名前はまだ無い。
+            <br />
+            どこで生れたかとんと見当がつかぬ。
+            <br />
+            何でも薄暗いじめじめした所でニャーニャー
+            <br />
+            泣いていた事だけは記憶している。
+          </p>
+          url="/images/01_top/main-cat3.jpg"
+          style="over_bg"
+        />
         <TestCarousel />
       </main>
       <Footer />

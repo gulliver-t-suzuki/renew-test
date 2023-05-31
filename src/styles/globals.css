@@ -25,9 +25,13 @@ body {
 body {
   overflow-x: hidden;
   background: #fff;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-weight: 700;
 }

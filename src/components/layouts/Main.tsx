@@ -12,7 +12,7 @@ const Main = () => {
       //NULLチェック
       if (h1Element && div) {
         const h1Height = h1Element.getBoundingClientRect().height;
-        const h1Position = windowHeight - (h1Height + 80); //h1の位置:どれだけ離すか次第,CSSと連動　*0.1はbottom: 10%
+        const h1Position = windowHeight - (h1Height + windowHeight * 0.12); //h1の位置:どれだけ離すか次第,CSSと連動　*0.1はbottom: 10%
         const divPosition = div.getBoundingClientRect().top + y; //divの位置
         const changePosition = divPosition - h1Position; //固定かどうかが変わる位置
         console.log("h1の位置: ", h1Position);
@@ -45,6 +45,8 @@ const Main = () => {
       const h1Position = windowHeight - (h1Height + 80); //h1の位置:どれだけ離すか次第,CSSと連動　*0.1はbottom: 10%
       const divPosition = div.getBoundingClientRect().top + y; //divの位置
       const changePosition = divPosition - h1Position; //固定かどうかが変わる位置
+      div.style.height = h1Height + "px";
+      console.log(div.style.height);
       //現在の場所を確認して固定するかしないか判断
       if (y >= changePosition) {
         h1Element.classList.remove(styles.isFixed);
@@ -65,30 +67,22 @@ const Main = () => {
   return (
     <div>
       <div
-        style={{ width: "100%", height: "100vh" }}
-        className={styles.cat}
-      ></div>
-
-      <div
         id="bottomContents"
+        className={styles.bottomContents}
         style={{
           maxWidth: "1200px",
           position: "relative",
-          fontSize: "80px",
-          margin: "160px auto 0 auto",
+          margin: "60% auto 0 auto",
         }}
       >
         <h1
           style={{ backgroundColor: "#fff5" }}
           className={(styles.isFixed, styles.h1)}
         >
-          固定するのは
+          行間は
           <br />
-          こいつ
+          120px指定
         </h1>
-        固定するのは
-        <br />
-        ここ
       </div>
     </div>
   );
