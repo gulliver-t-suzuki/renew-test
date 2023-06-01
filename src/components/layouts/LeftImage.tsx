@@ -12,8 +12,6 @@ export default function LeftImage(props: any) {
             style={{
               position: "absolute",
               right: "0",
-              width: "auto",
-              height: "100%",
             }}
           />
         </div>

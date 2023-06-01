@@ -47,19 +47,21 @@ export default function Home() {
               </p>
             </div>
           }
-          url="/images/01_top/main-cat2.jpg"
+          url="/images/01_top/main-cat5.jpeg"
           style="under_bg"
         />
         <LeftImage
-          text=<p>
-            吾輩は猫である。名前はまだ無い。
-            <br />
-            どこで生れたかとんと見当がつかぬ。
-            <br />
-            何でも薄暗いじめじめした所でニャーニャー
-            <br />
-            泣いていた事だけは記憶している。
-          </p>
+          text={
+            <p>
+              吾輩は猫である。名前はまだ無い。
+              <br />
+              どこで生れたかとんと見当がつかぬ。
+              <br />
+              何でも薄暗いじめじめした所でニャーニャー
+              <br />
+              泣いていた事だけは記憶している。
+            </p>
+          }
           url="/images/01_top/main-cat4.jpg"
           style="over_bg"
         />
