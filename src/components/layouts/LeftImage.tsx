@@ -6,14 +6,14 @@ export default function LeftImage(props: any) {
     <article className={`${styles[props.style]}`}>
       <div className={styles.side_wrapper}>
         <div className={styles.left_image}>
-          <Image
+          <img
             src={props.url}
             alt="test_image"
-            width={500}
-            height={500}
             style={{
-              width: "120%",
-              height: "auto",
+              position: "absolute",
+              right: "0",
+              width: "auto",
+              height: "100%",
             }}
           />
         </div>

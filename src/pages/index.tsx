@@ -60,7 +60,7 @@ export default function Home() {
             <br />
             泣いていた事だけは記憶している。
           </p>
-          url="/images/01_top/main-cat3.jpg"
+          url="/images/01_top/main-cat4.jpg"
           style="over_bg"
         />
         <TestCarousel />

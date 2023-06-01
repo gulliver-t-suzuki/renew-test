@@ -47,8 +47,9 @@
 }
 
 .left_image {
+  position: relative;
   width: 100vw;
-  max-height: 800px;
+  height: 800px;
   margin-left: calc(50% - 50vw);
   overflow: hidden;
   border-radius: 0 100px 100px 0;
